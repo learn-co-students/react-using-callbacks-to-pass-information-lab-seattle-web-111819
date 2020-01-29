@@ -1,10 +1,9 @@
-import React from 'react'
-// import React, { Component } from 'react';
+import React, { Component } from 'react'
 import learnSymbol from './data.js'
 import Cell from './Cell.js'
 import ColorSelector from './ColorSelector.js'
 
-// Matrix (parent component) keeps track of the current selected color
+// Matrix (Parent component) keeps track of the current selected color
 // Work from the 'top' layer down
 
 // DELIVERABLES:
@@ -46,7 +45,7 @@ class Matrix extends React.Component {
     return (
       <div id="app">
       {/* ColorSelector is the interface where users will be able to select a color, so it will need access to setSelectedColor */}
-      {/* STEP 3: Pass Data and Callbacks to Children by passing the needed function down as a prop: */}
+      {/* STEP 3: Pass data and callbacks to Children by passing the needed function down as a prop: */}
         <ColorSelector setSelectedColor={this.setSelectedColor} />
         <div id="matrix">
         {/* Remember that when using arrow functions, you can use parentheses instead of curly braces to implicitly return a value */}
