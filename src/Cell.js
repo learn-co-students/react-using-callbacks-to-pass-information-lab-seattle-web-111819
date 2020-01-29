@@ -25,7 +25,7 @@ class Cell extends React.Component {
     })
   }
   
-  // add onClick to call handleClick function
+  // add event handler
   render() {
     return (
       <div onClick={this.handleClick} className="cell" style={{backgroundColor: this.state.color}}>
